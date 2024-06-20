@@ -1,0 +1,24 @@
+<h1 class="text-center text-light mt-1">Tableau de bord</h1>
+<br>
+<div class="row mt-3">
+  <div class="col-3" *ngFor="let user of users; let i = index">
+    <div class="card">
+      <div class="card-body">
+        <div>
+          <h2 class="card-title">Nom d'utilisateur: {{ user.username }}</h2>
+          <p></p>
+        
+          <h2 class="card-title">Mission :</h2>
+          <p>{{ user.mission }}</p>
+
+          <h2 class="card-text">Jours de télétravail planifiés:</h2>        
+          <ul>
+            <li *ngFor="let day of user.teleworkDays">{{ day }}</li>
+          </ul>
+
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

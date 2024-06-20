@@ -1,0 +1,54 @@
+<div class="container">
+  <h1 class="text-center text-light mt-1">
+    <h1>Formulaire de télétravail</h1>
+  </h1>
+  <br>
+</div>
+
+<section>
+  <br>
+  <br>
+ <br>
+      <div class="container">
+       
+        <form action="" >
+          <div class="form-group">
+            <label >Nom :</label>
+            <input [(ngModel)]="employee.nom" name="nom" type="text" class="form-control"  >
+          </div>
+          <div class="form-group">
+            <label >Prénom :</label>
+            <input [(ngModel)]="employee.prenom" name="prenom" type="text" class="form-control"  >
+          </div>
+          <div class="form-group">
+            <label >Équipe :</label>
+            <input [(ngModel)]="employee.equipe" name="equipe" type="text" class="form-control"  >
+          </div>
+          <div class="form-group">
+            <label >Lieu du télétravail :</label>
+            <input [(ngModel)]="employee.lieu_de_travail" name="lieu_de_travail" type="text" class="form-control"  >
+          </div>
+          <div class="form-group">
+            <label >Date du télétravail :</label>
+            <input [(ngModel)]="employee.date_teletravail" name="date_teletravail" type="date" class="form-control"  >
+          </div>
+          <div class="form-group">
+            <label >Heure de début du télétravail :</label>
+            <input [(ngModel)]="employee.heure_debut_teletravail" name="heure_debut_teletravail" type="time" class="form-control"  >
+          </div>
+          <div class="form-group">
+            <label >Heure de fin du télétravail :</label>
+            <input [(ngModel)]="employee.heure_fin_teletravail" name="heure_fin_teletravail" type="time" class="form-control"  >
+          </div>
+          
+
+          <div class="form-group">
+            <button (click)="ajout()" class="btn  "> Eregistrer</button>
+          
+          </div>
+        </form>
+      </div>
+
+    </section>
+ 
+    

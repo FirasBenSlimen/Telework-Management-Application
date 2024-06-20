@@ -1,0 +1,44 @@
+.btn{
+    background-color: rgb(102, 102, 171);
+}
+
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    background-color: #3b5998;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #2e4c8c;
+  
+  }
+
+  section {
+    background-color: rgba(244, 238, 238, 0.573); height:700px; width: 800px;margin: 0 auto;
+    border: 1px solid rgba(250, 250, 250, 0.674);
+
+  
+  }
+  section {
+    margin-bottom: 10px;
+  }

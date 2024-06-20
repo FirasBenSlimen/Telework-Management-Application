@@ -1,0 +1,13 @@
+.navbar-nav li a,.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav li a.nav-link.active,.navbar-brand {
+  color: #0e0909;
+}
+
+.navbar {
+  background-color: #b6aeae;
+  border: 1.5px solid rgba(250, 250, 250, 0.974);
+
+}

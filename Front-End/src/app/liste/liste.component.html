@@ -1,0 +1,42 @@
+<div class="container">
+  <h1 class="text-center text-light mt-1">
+    <h1>Suivi du télétravail</h1>
+  </h1>
+  <br>
+</div>
+<div class="row mt-3">
+  <div class="col-md-12 d-flex justify-content-center px-3"></div>
+  <table class="table table-striped vertical-line">
+    
+    <thead>
+      <tr>
+        <th >Nom</th>
+    <th >Prénom</th>
+    <th>Équipe</th>
+    <th >Lieu de travail</th>
+    <th >Date du télétravail</th>
+    <th >Heure de début du télétravail</th>
+    <th >Heure de fin du télétravail</th>
+    
+    <th >Temps de travail</th>
+   
+  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of injection_table.employees">
+        <td>{{i.nom}}</td>
+        <td>{{i.prenom}}</td>
+        <td>{{i.equipe}}</td>
+        <td>{{i.lieu_de_travail}}</td>
+        <td>{{i.date_teletravail}}</td>
+        <td>{{i.heure_debut_teletravail}}</td>
+        <td>{{i.heure_fin_teletravail}}</td>
+       
+        <td>{{ calculerTempsDeTravail(i.heure_debut_teletravail, i.heure_fin_teletravail) }}</td>
+       
+      </tr>
+    </tbody>
+  </table>
+</div>
+
